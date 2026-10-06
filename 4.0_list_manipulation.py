@@ -26,10 +26,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What my list is about, and what I computed from it:
+# 1. In: a list of numbers
+# 2. Process: Sort the list and calculate the average of the numbers
+# 3. Out: The whole list, one item from the list, the sorted list, and the average
+# 4. What my list is about, and what I computed from it: My list is a list of numbers. I calculated the average because it shows the overall value of the numbers in the list.
 
 
 # Your code below
@@ -57,3 +57,7 @@ list.pop()
 
 # print the list after removing the last number
 print("The list after removing the last:", list)
+
+# calculate the average
+average = sum(list) / len(list)
+print("The average of the list is:", average)
