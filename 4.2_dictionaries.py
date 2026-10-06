@@ -23,10 +23,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My object, my five fields, and why those:
+# 1. In: Information about a person, including their name, age, occupation, city, and salary
+# 2. Process: Create a dictionary with five fields, update the age, and remove the salary field
+# 3. Out: The original person information, the updated age, the dictionary without the salary,and the removed salary
+# 4. My object, my five fields, and why those:My object is a person. My five fields are name, age, occupation, city, and salary because they describe basic information about a person.
 
 
 # Your code below
@@ -42,3 +42,26 @@ print("Age: " + str(age))
 print("Occupation: " + occupation)
 print("City: " + city)
 print("Salary: $" + str(salary))
+
+person = {
+    "name": "Trump", 
+    "age": 50,
+    "occupation": "President", 
+    "city": "Washington, D.C.",
+    "salary": 4000000
+}
+
+print("Person dictionary:", person)
+
+# update the age field
+person["age"] = 51
+
+# print the updated dictionary
+print("Updated person dictionary:", person)
+
+# remove the salary field
+salary = person.pop("salary")
+
+# print the dictionary after removing the salary field
+print("Person dictionary after removing salary field:", person)
+print("Removed salary:", salary)
