@@ -24,10 +24,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What happens when the second number is zero, and why:
+# 1. In: two numbers entered by the user
+# 2. Process:add, subtract, multiply, and divide the numbers
+# 3. Out: the sum, difference, product, and quotient of the numbers
+# 4. What happens when the second number is zero, and why: When the second number is zero, the program does not perform the division because division by zero is undefined. The if statement checks for zero first and prints a message instead.
 
 
 # Your code below
