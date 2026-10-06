@@ -25,10 +25,31 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My four orders, and which ones modify the original:
+# 1. In: a list of numbers
+# 2. Process: Create copies of the original list and reorder the copies in four different ways
+# 3. Out: The list displayed in four different orders, followed by the original list
+# 4. My four orders, and which ones modify the original: I chose the original order, sorted order, reverse order, and reverse sorted order.
+# Sorting with .sort() modifies the original list, while sorted() creates a new list.
 
 
 # Your code below
+list = [5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7]
+
+# original order
+print("Original list:", list)
+
+# sorted order
+sorted_list = sorted(list)
+print("Sorted list:", sorted_list)
+
+# reverse order
+reverse_list = list.copy()
+reverse_list.reverse()
+print("Reverse list:", reverse_list)
+
+# reverse sorted order
+reverse_sorted_list = sorted(list, reverse=True)
+print("Reverse sorted list:", reverse_sorted_list)
+
+# proving that the original list has not changed
+print("Original list at the end:", list)
