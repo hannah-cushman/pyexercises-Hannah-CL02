@@ -24,19 +24,22 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What I compute for each item, and why it is worth showing:
+# 1. In: a list of numbers
+# 2. Process: Go through each item in the list and find its position and its square
+# 3. Out: Each item, its position in the list, and its square
+# 4. What I compute for each item, and why it is worth showing: I compute the square of each item because it shows a calculation performed on each number and allows me to see how the value changes when it is squared.
 
 
 # Your code below
 list = [5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7]
 
-i = list[0]
-print(i)
-print(list.index(i))
-print(i**2)
+for position, item in enumerate(list):
+    print("The item is:", item, 
+          "and its position in the list is:", position, 
+          "and the square of the item is:", item**2)
 
-for i in list:
-    print("The item is: ", i, "and its position in the list is: ", list.index(i), "and the square of the item is:", i**2)
+
+# Check it yourself:
+# The list contains 11 items, so the program should print exactly 11 lines.
+# I checked the output and there are 11 lines, one for each item in the list.
+# The first item is at position 0 and the last item is at position 10.
