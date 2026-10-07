@@ -28,10 +28,24 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My stop condition, my attempt limit, my summary:
+# 1. In: A yes or no answer entered by the user
+# 2. Process: Keep asking the user for an answer until they answer yes or the maximum number of attempts is reached. Spaces at the beginning and end are removed and the answer is changed to lowercase.
+# 3. Out: The number of attempts and a summary of what happened
+# 4. My stop condition, my attempt limit, my summary: The loop stops when the user answers yes. I allow a maximum of 5 attempts. The summary shows how many attempts the user made and whether they answered yes.
+
 
 
 # Your code below
+attempts = 0
+max_attempts = 5
+answer = ""
+
+while answer != "yes" and attempts < max_attempts:
+    answer = input("Do you want to continue? ").strip().lower()
+    attempts = attempts + 1
+
+if answer == "yes":
+    print("You answered yes after", attempts, "attempt(s).")
+else:
+    print("You reached the maximum number of attempts.")
+    print("You made", attempts, "attempts.")
