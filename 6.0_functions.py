@@ -33,3 +33,46 @@ DELIVERABLE
 
 
 # Your code below
+number_1 = 10
+number_2 = 20
+
+sum = number_1 + number_2
+print("The sum of", number_1, "and", number_2, "is:", sum)
+
+number_1 = 1
+number_2 = 2
+
+sum = number_1 + number_2
+print("The sum of", number_1, "and", number_2, "is:", sum)
+
+number_1 = 4
+number_2 = 3
+
+sum = number_1 + number_2
+print("The sum of", number_1, "and", number_2, "is:", sum)
+
+def add_numbers_without_output (num1, num2):
+    sum_result = num1 + num2
+    print("The sum of", num1, "and", num2, "is:", sum_result)
+    return None
+
+
+def add_numbers(num1, num2):
+    sum_result = num1 + num2
+    print("The sum of", num1, "and", num2, "is:", sum_result)
+    return sum_result
+    
+
+
+sum = add_numbers(10, 20)
+sum_without_output = add_numbers_without_output(10, 20)
+
+print(sum)
+print(sum_without_output)
+
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+result = add_numbers(num1, num2)
+print("Sum:", result)
+
