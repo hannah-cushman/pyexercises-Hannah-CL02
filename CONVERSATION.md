@@ -39,3 +39,21 @@ print(result)
 ```
 
 What is the operator that performs addition between two variables?
+
+---
+## 2026-11-18 12:37, in .
+
+**Me:** how to write loops in python
+
+**Tutor:**
+
+A loop repeats code while a condition holds.
+
+```python
+# Loop over a list of toy products
+products = ["alpha", "beta", "gamma"]
+
+# TODO: write a for loop that prints each product
+```
+
+What built-in function iterates over a list?
