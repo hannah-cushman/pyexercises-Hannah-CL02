@@ -26,10 +26,12 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My function name, and why return rather than print:
+# 1. In: Two numbers (num1 and num2) that the function receives.
+# 2. Process: The function adds the two numbers together.
+# 3. Out: The sum of the two numbers, returned as sum_result.
+# 4. My function is called add_numbers because its name clearly explains what it does.
+#The function should return rather than print because returning allows the result to be stored in a variable, reused in other calculations, or used elsewhere in the program.
+#Printing only displays the result on the screen and does not make it available for further use.
 
 
 # Your code below
@@ -75,4 +77,5 @@ num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 result = add_numbers(num1, num2)
 print("Sum:", result)
+
 
